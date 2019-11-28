@@ -1,0 +1,34 @@
+<div class="container-fluid">
+    <h2 class="text-center">Create a new Entry</h2>
+    
+    <form (ngSubmit)='submitNewQuote()' #quoteForm='ngForm'>
+            <div class="form-group">
+  
+                    <label for="description">Author</label>
+                    <input class="form-control" id="description" id="diaryTitle"
+                     name="author" [(ngModel)]="author" rows="4" required>
+                    
+          
+                </div>
+
+                <div class="form-group">
+  
+                    <label for="description">Submitter</label>
+                    <input class="form-control" id="description" id="diaryTitle"
+                     name="submitter" [(ngModel)]="submitter" rows="4" required>
+                    
+          
+                </div>
+
+        <div class="form-group">
+  
+            <label for="description">Quote</label>
+            <textarea class="form-control" id="description" id="diaryEntry"
+             name="quote" [(ngModel)]="quote" rows="4" required></textarea>
+            
+  
+        </div>
+        
+        <button type="submit" class="btn btn-success">Add Entry</button>
+    </form>
+  </div>
