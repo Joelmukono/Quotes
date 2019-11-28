@@ -7,7 +7,12 @@ import { Quote } from '../quote';
 })
 export class QuoteFormComponent implements OnInit {
 
-  
+  author:string;
+  submitter:string;
+  quote:string;
+
+  date: Date = new Date();
+  newQuote:any;
 
 
   constructor() { }
