@@ -1,2 +1,10 @@
+<h1>Quotes</h1>
+
+<ul>
+    <li *ngFor = "let mQuote of newQuotes">
+        {{mQuote.author}}|{{mQuote.submittter}}|{{mQuote.quote}}|{{mQuote.nowDate}}
+    </li>
+</ul>
+
 
 <app-quote-form></app-quote-form>
