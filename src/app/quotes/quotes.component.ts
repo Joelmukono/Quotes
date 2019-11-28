@@ -16,6 +16,8 @@ export class QuotesComponent implements OnInit {
     this.newQuotes.push(quote);
 
   }
+
+  
   constructor() { }
 
   ngOnInit() {
