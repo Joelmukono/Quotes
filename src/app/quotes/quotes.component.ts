@@ -8,9 +8,14 @@ import { Quote } from '../quote'
 export class QuotesComponent implements OnInit {
 
   newQuotes : Quote[] = [
-    new Quote("Arnorld","Mukono","I'll be back",0,0),
+    new Quote("Arnorld","Mukono","I'll be back",new Date()),
   ]
 
+  addNewQuote(quote:any){
+    
+    this.newQuotes.push(quote);
+
+  }
   constructor() { }
 
   ngOnInit() {
