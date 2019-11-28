@@ -13,7 +13,10 @@ export class QuoteFormComponent implements OnInit {
 
   date: Date = new Date();
   newQuote:any;
+  
+  @Output() addEntry = new EventEmitter<Quote>();
 
+  
 
   constructor() { }
 
