@@ -6,12 +6,16 @@ import {Quote} from "../quote";
   styleUrls: ['./quotes-detail.component.css']
 })
 export class QuotesDetailComponent implements OnInit {
-  voteup:number = 0;
+  voteUp:number = 0;
   showVote = ""
   @Input() showQuote:Quote;
   @Output() addVote = new EventEmitter();
 
+  upVote(){
+    this.voteUp = this.voteUp + 1;
+    this.showVote  =""+ this.voteUp
  
+  } 
   
   constructor() { }
 
