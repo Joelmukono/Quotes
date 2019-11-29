@@ -1,7 +1,7 @@
 <h1>Quotes</h1>
 
 <ul *ngFor="let mQuote of newQuotes">
-    <li>{{ mQuote}}</li>
+    <li>{{ mQuote.quote}}</li>
     <app-quotes-detail [showQuote]="mQuote"></app-quotes-detail>
 </ul>
 
