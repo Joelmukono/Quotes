@@ -1,6 +1,9 @@
 <h1>Quotes</h1>
 
-
+<ul *ngFor="let mQuote of newQuotes">
+        <li>{{ mQuote.quote}}</li>
+        
+    </ul>
 
 
 <app-quote-form (addEntry)="addNewQuote($event)"></app-quote-form>
