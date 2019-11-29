@@ -13,6 +13,11 @@ export class QuotesComponent implements OnInit {
     new Quote("Arnorld","Mukono","I'll be back",new Date()),
   ]
 
+  deleteQuote(index){
+    this.newQuotes.splice(index,1)
+
+  }
+
   addNewQuote(quote:any){
     
     this.newQuotes.push(quote);

@@ -6,13 +6,17 @@ import { QuotesComponent } from './quotes/quotes.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { FormsModule } from '@angular/forms';
 import { QuotesDetailComponent } from './quotes-detail/quotes-detail.component';
+import { TimePassedPipe } from './time-passed.pipe';
+import { HighestVotesDirective } from './highest-votes.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     QuotesComponent,
     QuoteFormComponent,
-    QuotesDetailComponent
+    QuotesDetailComponent,
+    TimePassedPipe,
+    HighestVotesDirective
   ],
   imports: [
     BrowserModule,
