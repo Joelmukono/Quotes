@@ -13,9 +13,14 @@ export class QuotesDetailComponent implements OnInit {
 
   upVote(){
     this.voteUp = this.voteUp + 1;
-    this.showVote  =""+ this.voteUp
+    this.showVote  = "" + this.voteUp
  
   } 
+
+  downVote(){
+    this.voteUp = this.voteUp-1;
+    this.showVote = ""+this.voteUp;
+  }
   
   constructor() { }
 
