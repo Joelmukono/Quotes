@@ -7,6 +7,8 @@ import { Quote } from '../quote'
 })
 export class QuotesComponent implements OnInit {
 
+  
+
   newQuotes : Quote[] = [
     new Quote("Arnorld","Mukono","I'll be back",new Date()),
   ]
