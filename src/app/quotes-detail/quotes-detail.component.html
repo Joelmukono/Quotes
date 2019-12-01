@@ -1,8 +1,21 @@
-<p appHighestVotes>{{ showQuote.author }}</p>   <p>{{ showQuote.submitter }}</p> <p>{{showQuote.nowDate|timePassed}}</p>
-<button (click)='upVote()'>UpVote</button>
+<div class="contaner">
+<div class="row">
+        <div class="col-sm-3">
+            <span class="glyphicon glyphicon-triangle-top" (click)='upVote()'>Up-Vote</span>
+                <p class="showUpvote">{{showUpVote}}</p>
+                <p class=showDownVote>{{showDownVote}}</p>
+            <span class="glyphicon glyphicon-triangle-bottom" (click)='downVote()'>Down-Vote</span>
+        </div>
+            
+<div class="col-sm-3">
+<p appHighestVotes class="author">{{ showQuote.author }}-Author</p> 
+</div>  
+<div class="col-sm-3">
+<p class = "submitter">{{ showQuote.submitter }}-submitter</p> 
+</div>
+<div class="col-sm-3">
+<p class ="date">{{showQuote.nowDate|timePassed}}-sec-ago</p>
+</div>
 
-<p>{{showUpVote}}</p>
 
-<button (click)= 'downVote()'>DownVote</button>
-
-<p>{{showDownVote}}</p>
+</div>
