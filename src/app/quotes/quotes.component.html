@@ -1,11 +1,21 @@
-<h1>Quotes</h1>
+<div class="container">
+ <div class= "row">
 
-<ul *ngFor="let mQuote of newQuotes;let i= index">
-    <li>{{ mQuote.quote}}</li>
-    <app-quotes-detail [showQuote]="mQuote"></app-quotes-detail>
-    <button (click)= 'deleteQuote(i)'>Delete Quote</button>
+        <div class="col-sm-6">
 
-</ul>
+                <app-quote-form (addEntry)="addNewQuote($event)"></app-quote-form>
+            </div>
+    <div class= "col-sm-6">
+    
+    <h1>Quotes</h1>
 
+        <ul *ngFor="let mQuote of newQuotes;let i= index">
+            <li>{{ mQuote.quote}}</li>
+            <app-quotes-detail [showQuote]="mQuote"></app-quotes-detail>
+            <button (click)= 'deleteQuote(i)'>Delete Quote</button>
 
-<app-quote-form (addEntry)="addNewQuote($event)"></app-quote-form>
+        </ul>
+    </div>
+    
+</div>
+</div>
