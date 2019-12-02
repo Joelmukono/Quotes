@@ -11,9 +11,10 @@ ul {
 
 .quote{
     padding-bottom: 20px;
-    font-size: 20px;
+    font-size: 28px;
     padding-top: 20px;
-    font-family:'Bebas Neue', cursive ;
+    font-weight: bold;
+    font-family:'Patua One', cursive;
 }
 
 .quotes{
@@ -23,4 +24,8 @@ ul {
 
 .up{
     padding-left: 20px;
+}
+
+.remove{
+    font-size: 20px;
 }

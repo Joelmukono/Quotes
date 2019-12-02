@@ -21,6 +21,7 @@ export class QuotesComponent implements OnInit {
   addNewQuote(quote:any){
     
     this.newQuotes.push(quote);
+    this.newQuotes.reverse()
 
   }
 

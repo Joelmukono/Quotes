@@ -4,8 +4,8 @@
     <form (ngSubmit)='submitNewQuote()' #quoteForm='ngForm' ngNativeValidate>
             <div class="form-group">
   
-                    <label for="description">Author</label>
-                    <input class="form-control" id="description" id="diaryTitle"
+                    <label for="description ">Author</label>
+                    <input class="form-control author shadow p-3 mb-5 bg-white rounded" id="author" 
                      name="author" [(ngModel)]="author" rows="2" required>
                     
           
@@ -13,8 +13,8 @@
 
                 <div class="form-group">
   
-                    <label for="description">Submitter</label>
-                    <input class="form-control" id="description" id="diaryTitle"
+                    <label for="description ">Submitter</label>
+                    <input class="form-control submitter shadow p-3 mb-5 bg-white rounded" id="submitter" 
                      name="submitter" [(ngModel)]="submitter" rows="2" required>
                     
           
@@ -22,13 +22,13 @@
 
         <div class="form-group">
   
-            <label for="description">Quote</label>
-            <textarea class="form-control" id="description" id="diaryEntry"
+            <label for="description ">Quote</label>
+            <textarea class="form-control shadow p-3 mb-5 bg-white rounded " id="quote" 
              name="quote" [(ngModel)]="quote" rows="2" required></textarea>
             
   
         </div>
         
-        <button type="submit" class="btn btn-success">Add Quote</button>
+        <button type="submit" class="btn btn-success add">Add Quote</button>
     </form>
   </div>

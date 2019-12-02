@@ -3,20 +3,21 @@
     padding-left: 20px;
     font-family: 'Roboto Mono', monospace;
     font-size: 12px;
+    font-weight: bold;
 }
 .submitter{
     padding-top: 15px;
     padding-left: 20px;
     font-family: 'Roboto Mono', monospace;
     font-size: 12px;
-
+    font-weight: bold;
 }
 .date{
     padding-top: 15px;
-    padding-left: 20px;
+    padding-right: 5px;
     font-family: 'Roboto Mono', monospace;
     font-size: 12px;
-
+    font-weight: bold;
 }
 
 .glyphicon-triangle-top{
@@ -30,13 +31,19 @@
 }
 .showUpvote{
     font-size: 15px;
+    padding-left:10px;
 }
 .showDownVote{
     font-size: 15px;
+    padding-left:10px;
 }
 
 .vote{
     font-family: 'Anton', sans-serif;
 
+}
+
+.time{
+    padding-right: 10px;
 }
 

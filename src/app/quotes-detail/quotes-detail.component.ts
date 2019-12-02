@@ -17,6 +17,9 @@ export class QuotesDetailComponent implements OnInit {
     this.voteUp = this.voteUp;
     
     this.voteUp = this.voteUp+1;
+
+   
+
     this.showUpVote = "" +this.voteUp;
  
   } 

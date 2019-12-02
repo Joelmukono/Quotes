@@ -1,3 +1,4 @@
+<div class="container-fluid">
 <div class="container">
  <div class= "row">
 
@@ -10,18 +11,26 @@
     
     <h1 class="text-center quotes">Quotes</h1>
         <div class="container">
-            <div class='card quotes'>
-                <ul *ngFor="let mQuote of newQuotes;let i= index">
-                    <li class="text-center quote">{{ mQuote.quote}}</li>
-                    <app-quotes-detail class="quote_detail" [showQuote]="mQuote"></app-quotes-detail>
-                    <div class="delete">
-                        <button type="button" class="btn btn-danger"(click)= 'deleteQuote(i)'>Delete</button>
+      <div class="row">
+          <div class="col-md-12">
+                <div>
+                        <ul *ngFor="let mQuote of newQuotes;let i= index">
+                            <div class='card quotes mb-3 p-3 shadow p-3 mb-5 bg-white rounded'>
+                                    <li class="text-center quote">{{ mQuote.quote}}</li>
+                                    <app-quotes-detail class="quote_detail" [showQuote]="mQuote"></app-quotes-detail>
+                                    <div class="delete">
+                                        <button type="button" class="btn btn-danger remove"(click)= 'deleteQuote(i)'>Delete</button>
+                                    </div>
+                            </div>
+                     
+                        </ul>
                     </div>
-                </ul>
-            </div>
+          </div>
+      </div>
         </div>
     </div>
     
     
+</div>
 </div>
 </div>
