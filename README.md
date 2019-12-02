@@ -1,5 +1,10 @@
 # Quotes
 
-This paticular application allows users to add,view or delete quotes.A user can also vote on a quote either upwards or downwards using arrows.
+This Typescript application allows users to view,add and delete quotes.A user is also able to vote on each quote.A user can vote either upwards or downwards using given arrows
 
-##
+## Author: Joel Mukono
+
+## Technologies Used
+#### HTML,CSS,Typescript.
+
+
