@@ -1,0 +1,9 @@
+body {
+    background-color: lightblue;
+  }
+
+h1.heading{
+    text-align: left;
+    font-size: 30px;
+    font-family: 'Anton', sans-serif;
+}

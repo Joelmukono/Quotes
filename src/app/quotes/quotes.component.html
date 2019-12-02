@@ -7,14 +7,19 @@
             </div>
     <div class= "col-sm-6">
     
-    <h1 class="text-center">Quotes</h1>
-
-        <ul *ngFor="let mQuote of newQuotes;let i= index">
-            <li class="text-center quote">{{ mQuote.quote}}</li>
-            <app-quotes-detail class="quote_detail" [showQuote]="mQuote"></app-quotes-detail>
-            <span class="glyphicon glyphicon-remove delete" (click)= 'deleteQuote(i)'>Delete</span>
-            
-        </ul>
+    
+    <h1 class="text-center quotes">Quotes</h1>
+        <div class="container">
+            <div class='card quotes'>
+                <ul *ngFor="let mQuote of newQuotes;let i= index">
+                    <li class="text-center quote">{{ mQuote.quote}}</li>
+                    <app-quotes-detail class="quote_detail" [showQuote]="mQuote"></app-quotes-detail>
+                    <div class="delete">
+                        <button type="button" class="btn btn-danger"(click)= 'deleteQuote(i)'>Delete</button>
+                    </div>
+                </ul>
+            </div>
+        </div>
     </div>
     
     

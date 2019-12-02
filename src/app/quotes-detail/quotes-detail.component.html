@@ -1,16 +1,22 @@
 <div class="contaner">
 <div class="row">
+
         <div class="col-sm-3">
-            <span class="glyphicon glyphicon-triangle-top" (click)='upVote()'>Up-Vote</span>
+            <h2 class="vote">Vote</h2>
+            <span class="glyphicon glyphicon-triangle-top up" (click)='upVote()'></span>
+            
                 <p class="showUpvote">{{showUpVote}}</p>
                 <p class=showDownVote>{{showDownVote}}</p>
-            <span class="glyphicon glyphicon-triangle-bottom" (click)='downVote()'>Down-Vote</span>
+            
+            <span class="glyphicon glyphicon-triangle-bottom down" (click)='downVote()'></span>
+            
         </div>
             
 <div class="col-sm-3">
 <p appHighestVotes class="author">{{ showQuote.author }}-Author</p> 
 </div>  
 <div class="col-sm-3">
+
 <p class = "submitter">{{ showQuote.submitter }}-submitter</p> 
 </div>
 <div class="col-sm-3">

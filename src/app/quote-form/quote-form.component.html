@@ -1,7 +1,7 @@
 <div class="container-fluid">
-    <h2 class="text-center">Create a new Quote</h2>
+    <h2 class="text-center newQuote">Create a new Quote</h2>
     
-    <form (ngSubmit)='submitNewQuote()' #quoteForm='ngForm'>
+    <form (ngSubmit)='submitNewQuote()' #quoteForm='ngForm' ngNativeValidate>
             <div class="form-group">
   
                     <label for="description">Author</label>

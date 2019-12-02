@@ -3,6 +3,24 @@ ul {
   }
 
 .delete{
+    margin:auto;
+    width:50%;
     padding-top: 20px;
+    padding-left:100px;
+}
+
+.quote{
+    padding-bottom: 20px;
+    font-size: 20px;
+    padding-top: 20px;
+    font-family:'Bebas Neue', cursive ;
+}
+
+.quotes{
+    padding-bottom: 20px;
+    font-family:'Anton', sans-serif;
+}
+
+.up{
     padding-left: 20px;
 }

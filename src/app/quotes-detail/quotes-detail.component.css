@@ -1,13 +1,42 @@
 .author{
     padding-top:15px;
     padding-left: 20px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 12px;
 }
 .submitter{
     padding-top: 15px;
     padding-left: 20px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 12px;
 
 }
 .date{
     padding-top: 15px;
     padding-left: 20px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 12px;
+
 }
+
+.glyphicon-triangle-top{
+    font-size: 25px;
+    color:blue;
+    
+}
+.glyphicon-triangle-bottom{
+    font-size: 25px;
+    color:blue;
+}
+.showUpvote{
+    font-size: 15px;
+}
+.showDownVote{
+    font-size: 15px;
+}
+
+.vote{
+    font-family: 'Anton', sans-serif;
+
+}
+
