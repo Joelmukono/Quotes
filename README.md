@@ -5,8 +5,8 @@ This Typescript application allows users to view,add and delete quotes.A user is
 ## Author: Joel Mukono
 
 ## Technologies Used
--HTML
--CSS
--Typescript
+- HTML
+- CSS
+- Typescript
 
 
